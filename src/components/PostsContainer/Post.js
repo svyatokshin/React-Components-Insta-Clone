@@ -8,6 +8,12 @@ import PostHeader from "./PostHeader";
 import "./Posts.css";
 
 const Post = props => {
+  const [likes, setLikes] = useState(props.blah.blah);
+
+  const incrementLikes = () => {
+    setLikes(likes => likes + 1);
+  };
+  
   // set up state for the likes
 
   return (
