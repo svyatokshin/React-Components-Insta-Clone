@@ -11,8 +11,10 @@ const PostsPage = props => {
       
       {props.postData.map(p => (
           <Post
-            key={p.imageUrl}
-            postData={p} />
+          postData={p}
+            // key={p.imageUrl}
+            // postData={p} 
+            />
       ))} {/* map through data here */}
     </div>
   );
